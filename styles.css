@@ -1,30 +1,78 @@
+@font-face {
+  font-family: A day without sun;
+  src: url('./fonts/a-day-without-sun.regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: Flicker;
+  src: url('./fonts/flicker.regular.otf') format('opentype');
+}
+
+body {
+  background-color: #f1faee;
+}
+
+h1 {
+  font-family: A day without sun;
+  color: #31587a;
+  font-size: 8em;
+  text-align: center;
+}
+
+h2 {
+  font-family: A day without sun;
+  color: #31587a;
+  font-size: 6em;
+}
+
 .mainPage,
 .cvPage {
   margin: 150px;
 }
 
-.cvImg {
-  max-width: 80%;
+.cvPageHeader {
+  display: flex;
+  flex-direction: row;
 }
 
-.footer ul {
-  list-style-type: none;
+.myPic {
+  max-width: 25%;
+  margin: 15px;
+  padding: 20px;
 }
 
-.footer li {
-  display: inline;
+.cvPage a {
+  text-decoration: none;
+  font-family: Flicker;
+  color: #31587a;
 }
 
-.footer li :hover,
-.footer li :focus {
-  color: #ec6333;
+.footer {
+  font-family: Flicker;
+  background-color: #77abbd;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+}
+
+.footer_item {
+  width: 33%;
+  text-align: center;
+}
+
+.footer_item :hover,
+.footer_item :focus {
+  color: #e63946;
 }
 
 .footer a {
   text-decoration: none;
+  color: #f1faee;
 }
 
 /* hamburger menu*/
+
 #menuToggle {
   display: block;
   position: relative;
@@ -36,13 +84,14 @@
 }
 
 #menuToggle a {
+  font-family: Flicker;
   text-decoration: none;
-  color: #dee2e6;
+  color: #f1faee;
   transition: color 0.3s ease;
 }
 
 #menuToggle a:hover {
-  color: #ec6333;
+  color: #e63946;
 }
 
 #menuToggle input {
@@ -68,7 +117,7 @@
   margin-bottom: 5px;
   position: relative;
 
-  background: #212529;
+  background: #31587a;
   border-radius: 3px;
 
   z-index: 1;
@@ -90,7 +139,7 @@
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #dee2e6;
+  background: #f1faee;
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -109,7 +158,7 @@
   padding: 50px;
   padding-top: 125px;
 
-  background: #212529;
+  background: #77abbd;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
