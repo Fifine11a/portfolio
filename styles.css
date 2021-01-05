@@ -1,3 +1,13 @@
+body {
+  background-color: #f1faee;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+}
+
+/* fonts */
+
 @font-face {
   font-family: A day without sun;
   src: url('./fonts/a-day-without-sun.regular.otf') format('opentype');
@@ -8,15 +18,13 @@
   src: url('./fonts/flicker.regular.otf') format('opentype');
 }
 
-body {
-  background-color: #f1faee;
-}
-
 h1 {
   font-family: A day without sun;
   color: #31587a;
   font-size: 8em;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 70px;
 }
 
 h2 {
@@ -25,10 +33,19 @@ h2 {
   font-size: 6em;
 }
 
+h3 {
+  font-family: Flicker;
+  color: #31587a;
+}
+
+/* end of fonts */
+
 .mainPage,
 .cvPage {
-  margin: 150px;
+  margin: 70px;
 }
+
+/* CV page */
 
 .cvPageHeader {
   display: flex;
@@ -47,6 +64,10 @@ h2 {
   color: #31587a;
 }
 
+/* end of CV page */
+
+/* footer */
+
 .footer {
   font-family: Flicker;
   background-color: #77abbd;
@@ -54,6 +75,10 @@ h2 {
   flex-direction: row;
   height: 50px;
   align-items: center;
+  font-size: larger;
+  letter-spacing: 0.1em;
+  margin-top: auto;
+  margin-bottom: 10px;
 }
 
 .footer_item {
@@ -71,7 +96,9 @@ h2 {
   color: #f1faee;
 }
 
-/* hamburger menu*/
+/* end of footer */
+
+/* hamburger menu */
 
 #menuToggle {
   display: block;
@@ -176,4 +203,4 @@ h2 {
 #menuToggle input:checked ~ ul {
   transform: none;
 }
-/* konec hamburger menu*/
+/* end of hamburger menu */
