@@ -6,6 +6,11 @@ body {
   flex-direction: column;
 }
 
+.mainPage,
+.cvPage {
+  margin: 70px;
+}
+
 /* fonts */
 
 @font-face {
@@ -40,22 +45,15 @@ h3 {
 
 /* end of fonts */
 
-.mainPage,
-.cvPage {
-  margin: 70px;
-}
-
 /* CV page */
-
-.cvPageHeader {
-  display: flex;
-  flex-direction: row;
-}
 
 .myPic {
   max-width: 25%;
   margin: 15px;
   padding: 20px;
+  position: absolute;
+  top: 0;
+  right: 0%;
 }
 
 .cvPage a {
