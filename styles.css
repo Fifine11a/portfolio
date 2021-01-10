@@ -11,6 +11,20 @@ body {
   margin: 70px;
 }
 
+.cvPage a,
+.projectLink a {
+  text-decoration: none;
+  font-family: Flicker;
+  color: #31587a;
+}
+
+.cvDownload :hover,
+.cvDownload :focus,
+.projectLink :hover,
+.projectLink :focus {
+  color: #e63946;
+}
+
 /* fonts */
 
 @font-face {
@@ -58,17 +72,6 @@ h4 {
 
 .cvPage {
   flex-direction: column;
-}
-
-.cvPage a {
-  text-decoration: none;
-  font-family: Flicker;
-  color: #31587a;
-}
-
-.cvDownload :hover,
-.cvDownload :focus {
-  color: #e63946;
 }
 
 .myCV {
