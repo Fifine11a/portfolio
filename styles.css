@@ -33,33 +33,54 @@ h1 {
 }
 
 h2 {
-  font-family: A day without sun;
-  color: #31587a;
-  font-size: 6em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5em;
+  margin: 50px 0;
+  font-style: normal;
 }
 
 h3 {
-  font-family: Flicker;
-  color: #31587a;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.9em;
+  margin: 0;
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7em;
+  font-style: italic;
+  margin: 0;
 }
 
 /* end of fonts */
 
 /* CV page */
 
-.myPic {
-  max-width: 25%;
-  margin: 15px;
-  padding: 20px;
-  position: absolute;
-  top: 0;
-  right: 0%;
+.cvPage {
+  flex-direction: column;
 }
 
 .cvPage a {
   text-decoration: none;
   font-family: Flicker;
   color: #31587a;
+}
+
+.cvDownload :hover,
+.cvDownload :focus {
+  color: #e63946;
+}
+
+.myCV {
+  max-width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.cvDownload {
+  margin: 30px;
 }
 
 /* end of CV page */
