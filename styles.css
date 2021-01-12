@@ -1,14 +1,26 @@
 body {
-  background-color: #f1faee;
+  background-color: #e8f6ec;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
   display: flex;
   flex-direction: column;
+  color: #0f1f2e;
 }
 
+.cvPage,
 .mainPage,
-.cvPage {
-  margin: 70px;
+.swapappPage,
+.schoolPage {
+  margin: 70px 70px 50px 70px;
+  background-color: #f1faee;
+}
+
+p {
+  padding: 0 40px;
+}
+
+hr {
+  border: 2px solid #31587a;
 }
 
 .cvPage a,
@@ -42,35 +54,37 @@ h1 {
   color: #31587a;
   font-size: 8em;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 70px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 3.5em;
-  margin: 50px 0;
-  font-style: normal;
-}
-
-h3 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.9em;
-  margin: 0;
-}
-
-h4 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.7em;
-  font-style: italic;
-  margin: 0;
+  font-family: Flicker;
+  color: #31587a;
+  font-size: 1em;
 }
 
 /* end of fonts */
 
+/* swapApp page */
+
+.swapappImg {
+  max-width: 100%;
+  filter: opacity(80%);
+  display: block;
+}
+
+.swapappImg img {
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* end of swapApp page */
+
 /* CV page */
 
-.cvPage {
+.cvPage,
+.swapappPage {
   flex-direction: column;
 }
 
